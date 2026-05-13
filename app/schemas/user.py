@@ -1,5 +1,6 @@
 
 from datetime import datetime
+import uuid
 
 from sqlmodel import SQLModel
 
@@ -13,6 +14,7 @@ class UserCreate(SQLModel):
 
 
 class UserRead(SQLModel):
+    id: uuid.UUID
     username: str
     name: str
     lastname: str
