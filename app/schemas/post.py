@@ -15,3 +15,8 @@ class PostRead(SQLModel):
     user_id: uuid.UUID
     description: str
     created_at: datetime
+
+
+class PostUpdate(SQLModel):
+    description: str | None = None
+    user_id: uuid.UUID | None = None

@@ -20,3 +20,10 @@ class UserRead(SQLModel):
     lastname: str
     email: str
     created_at: datetime
+
+
+class UserUpdate(SQLModel):
+    username: str | None = None
+    name: str | None = None
+    lastname: str | None = None
+    email: str | None = None
